@@ -1,4 +1,4 @@
-puts "Choisis un nombre :) "
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
 usernumber = gets.chomp.to_i
 
