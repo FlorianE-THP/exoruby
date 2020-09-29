@@ -1,9 +1,15 @@
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+puts "Salut, bienvenue dans ma super pyramide ! Choisi un nombre entre 1 et 25"
 
 usernumber = gets.chomp.to_i
 
 pyramidnumber = 1
-while pyramidnumber <= usernumber
+
+case usernumber
+when 1..25
+  while pyramidnumber <= usernumber
   puts "# " * pyramidnumber
   pyramidnumber += 1
+end
+else
+  puts "Dommage.."
 end
